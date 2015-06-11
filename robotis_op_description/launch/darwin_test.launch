@@ -1,0 +1,21 @@
+<launch>
+        <arg name="model" />
+        <arg name="gui" default="True" />
+        <param name="robot_description" textfile="$(find robotis_darwin_description)/urdf/darwin.urdf" />
+        <param name="use_gui" value="$(arg gui)"/>
+        <node name="robot_state_publisher"
+	      pkg="robot_state_publisher"
+	      type="state_publisher" />
+
+        <!-- darwin_node -->
+        <node pkg ="robotis_darwin_robot"
+              type="robotis_darwin_robot"
+              name="robotis_darwin_robot"
+              output="screen">
+        <remap from="/robotis_darwin_robot/joint_states"
+               to="/joint_states" />
+
+        </node>
+
+</launch>
+

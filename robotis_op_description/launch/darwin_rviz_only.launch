@@ -1,0 +1,17 @@
+<launch>
+        <arg name="model" />
+        <arg name="gui" default="True" />
+        <param name="robot_description" textfile="$(arg model)" />
+        <param name="use_gui" value="$(arg gui)"/>
+        <node name="robot_state_publisher" 
+              pkg="robot_state_publisher" 
+              type="state_publisher" >
+        </node>
+        
+        <!-- Use this for a simulated robot to control the different joints -->
+        <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+        
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_tutorial)/urdf.rviz -f /MP_BODY" />
+
+</launch>
+
