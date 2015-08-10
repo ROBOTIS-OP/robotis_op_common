@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- set the robot's name -->
+<!-- Set the robot's name -->
 <robot name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- Constants for robot dimensions -->
@@ -7,15 +7,17 @@
 
   <!-- Import all Gazebo-customization elements, including Gazebo colors -->
 <!--   <xacro:include filename="$(find robotis_op_description)/urdf/robotis_op2.gazebo" /> -->
+
   <!-- Import Rviz colors -->
   <xacro:include filename="$(find robotis_op_description)/urdf/materials.xacro" />
 
+  <!--  Set the robot's link and joint -->
   <link name="base_link"/>
   
   <joint name="base_link_to_body" type="fixed">
     <parent link="base_link"/>
     <child link="MP_BODY"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0.35" rpy="0 0 0"/>
   </joint>
 
   <link name="MP_BODY">
@@ -25,15 +27,11 @@
       <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
     </inertial>
     <visual>
-      <!--origin xyz="-0.0235 0 -0.03525" rpy="0 0 0" /-->
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.102 0.109 0.106" /-->
         <mesh filename="package://robotis_op_description/meshes/body.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -51,12 +49,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.045 0.022 0.0325" /-->
         <mesh filename="package://robotis_op_description/meshes/neck.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -74,12 +69,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!-- box size="0.0634 0.061 0.033" /-->
         <mesh filename="package://robotis_op_description/meshes/head.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -99,9 +91,7 @@
       <geometry>
         <box size="0.001 0.001 0.001"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -121,12 +111,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.016 0.033 0.02165" /-->
         <mesh filename="package://robotis_op_description/meshes/shoulder_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -144,12 +131,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.06 0.032 0.035" /-->
         <mesh filename="package://robotis_op_description/meshes/arm_high_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -170,9 +154,7 @@
       <geometry>
         <box size="0.032 0.032 0.035" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <origin xyz="0.016 0.016 0" rpy="0 0 0" />
@@ -194,9 +176,7 @@
       <geometry>
         <box size="0.064 0.032 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <origin xyz="0.016 0 0" rpy="0 0 0" />
@@ -217,9 +197,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -239,9 +217,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision name="COL_MP_ARM_GRIPPER_MOV_L">
       <origin xyz="0.016 0 0" rpy="0 0 0" />
@@ -255,9 +231,7 @@
       <geometry>
         <box size="0.002 0.01 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision name="COL_MP_ARM_GRIPPER_MOV_EXT_L">
       <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
@@ -265,7 +239,6 @@
         <box size="0.002 0.01 0.032" />
       </geometry>
     </collision>
-
 
   </link>
 
@@ -281,9 +254,7 @@
       <geometry>
         <box size="0.001 0.001 0.001" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -302,12 +273,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.016 0.033 0.02165" /-->
         <mesh filename="package://robotis_op_description/meshes/shoulder_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="1.5707963  0 3.14" />
@@ -326,12 +294,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.06 0.032 0.035"/-->
         <mesh filename="package://robotis_op_description/meshes/arm_high_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -352,9 +317,7 @@
       <geometry>
         <box size="0.032 0.032 0.035" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <origin xyz="0.016 -0.016 0" rpy="0 0 0" />
@@ -375,9 +338,7 @@
       <geometry>
         <box size="0.064 0.032 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <origin xyz="0.016 0 0" rpy="0 0 0" />
@@ -398,9 +359,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -420,9 +379,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision name="COL_MP_ARM_GRIPPER_MOV_R">
       <origin xyz="0.016 0 0" rpy="0 0 0" />
@@ -436,9 +393,7 @@
       <geometry>
         <box size="0.002 0.01 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision name="COL_MP_ARM_GRIPPER_MOV_EXT_R">
       <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
@@ -446,8 +401,6 @@
         <box size="0.002 0.01 0.032" />
       </geometry>
     </collision>
-
-
   </link>
 
   <link name="MP_PELVIS_L" >
@@ -459,12 +412,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.045 0.08175 0.028652" /-->
         <mesh filename="package://robotis_op_description/meshes/pelvis_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -482,12 +432,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.001 0.001 0.001"/-->
         <mesh filename="package://robotis_op_description/meshes/thigh1_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -505,12 +452,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.093 0.035 0.045"-->
         <mesh filename="package://robotis_op_description/meshes/thigh2_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -528,12 +472,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.093 0.035 0.045"/-->
         <mesh filename="package://robotis_op_description/meshes/tibia_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -551,12 +492,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.028652 0.08175 0.045"/-->
         <mesh filename="package://robotis_op_description/meshes/ankle1_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -574,12 +512,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.008 0.066 0.104"/-->
         <mesh filename="package://robotis_op_description/meshes/ankle2_l.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -597,12 +532,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.045 0.08175 0.028652" /-->
         <mesh filename="package://robotis_op_description/meshes/pelvis_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -620,12 +552,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.001 0.001 0.001"/-->
         <mesh filename="package://robotis_op_description/meshes/thigh1_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -644,12 +573,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.093 0.035 0.045"/-->
         <mesh filename="package://robotis_op_description/meshes/thigh2_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -668,12 +594,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.093 0.035 0.045"/-->
         <mesh filename="package://robotis_op_description/meshes/tibia_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -692,12 +615,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.028652 0.08175 0.045"/-->
         <mesh filename="package://robotis_op_description/meshes/ankle1_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -716,12 +636,9 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <!--box size="0.008 0.066 0.104"/-->
         <mesh filename="package://robotis_op_description/meshes/ankle2_r.STL"  scale="1 1 1"/>
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     <collision>
       <geometry>
@@ -738,9 +655,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-      <material name="Grey">
-        <color rgba="0.60 0.60 0.60 1.0"/>
-      </material>
+      <material name="grey"/>
     </visual>
     -->
   </link>
