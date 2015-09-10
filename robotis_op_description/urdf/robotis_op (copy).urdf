@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="darwinOP">
+<robot name="robotis_op">
 <link name="base_link"/>
   
   <joint name="base_link_to_body" type="fixed">
@@ -962,7 +962,7 @@
   
   <gazebo>
     <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
-      <robotNamespace>/darwin</robotNamespace>
+      <robotNamespace>/robotis_op</robotNamespace>
     </plugin>
   </gazebo>
   
@@ -1571,7 +1571,7 @@
           <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
             <alwaysOn>true</alwaysOn>
             <updateRate>30</updateRate>
-            <cameraName>darwin/camera</cameraName>
+            <cameraName>robotis_op/camera</cameraName>
             <imageTopicName>image_raw</imageTopicName>
             <cameraInfoTopicName>camera_info</cameraInfoTopicName>
             <frameName>camera_link</frameName>
@@ -1590,8 +1590,8 @@
         <plugin filename="libhector_gazebo_ros_imu.so" name="gazebo_ros_imu">
           <bodyName>MP_BODY</bodyName>
           <updateRate>50</updateRate>
-          <serviceName>/darwin/imu_service</serviceName>
-          <topicName>/darwin/imu</topicName>
+          <serviceName>/robotis_op/imu_service</serviceName>
+          <topicName>/robotis_op/imu</topicName>
           <gaussianNoise>0</gaussianNoise>
           <xyzOffset>0 0 0</xyzOffset>
           <rpyOffset>0 0 -0.703220730592</rpyOffset>
