@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<robot name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  
+
+
+
+  <xacro:include filename="$(find robotis_op_description)/urdf/robotis_op_simple_mesh_visual_geoms.urdf.xacro.xml" />
+
+  <xacro:include filename="$(find robotis_op_description)/urdf/robotis_op_simple_mesh_collision_geoms.urdf.xacro.xml" />
+  
+<!--
+  <xacro:include filename="$(find robotis_op_description)/urdf/arm/thor_arm_7dof_simple.urdf.xacro" />
+  <xacro:include filename="$(find robotis_op_description)/urdf/torso/thor_mang_torso.urdf.xacro.xml" />
+  <xacro:include filename="$(find robotis_op_description)/urdf/torso/thor_mang_pelvis_imu.urdf.xacro.xml" />
+  <xacro:include filename="$(find robotis_op_description)/urdf/leg/thor_mang_leg.urdf.xacro.xml" />
+  
+  
+  <xacro:include filename="$(find robotis_op_description)/urdf/head/thor_head_pan_tilt_unit.urdf.xacro.xml" />
+  <xacro:include filename="$(find robotis_op_description)/urdf/head/thor_lidar_camera_head.urdf.xacro.xml" />
+  <xacro:include filename="$(find robotis_op_description)/urdf/lidar/thor_lidar_pan_unit.urdf.xacro.xml" />
+  
+
+  <xacro:include filename="$(find robotis_op_description)/robots/thor_mang_zero_offsets.urdf.xacro.xml" />     
+-->  
+  <macro name="robotis_op_macro">
+<!--  
+  <thor_mang_torso_macro />
+  
+  <thor_mang_pelvis_imu_macro />
+  
+  <thor_mang_leg_macro parent="pelvis" name="l" reflect="1" leg_joint3_limit_lower="${-M_PI*0.15}" leg_joint3_limit_upper="${M_PI}">
+    <origin xyz="0.0 0.072 -0.145" rpy="0 0 0"/>
+  </thor_mang_leg_macro>
+  
+  <thor_mang_leg_macro parent="pelvis" name="r" reflect="-1" leg_joint3_limit_lower="${-M_PI}" leg_joint3_limit_upper="${M_PI*0.15}">
+    <origin xyz="0.0 -0.072 -0.145" rpy="0 0 0"/>
+  </thor_mang_leg_macro>
+  
+  <thor_arm_7dof_simple_with_offsets_macro parent="utorso" name="l" reflect="1"        
+     arm_joint_0_limit_lower="${-M_PI}"
+     arm_joint_0_limit_upper="${2.3}"
+     arm_joint_1_limit_lower="${-M_PI}"
+     arm_joint_1_limit_upper="${0.05}" 
+     arm_joint_2_limit_lower="${-M_PI*0.5}"
+     arm_joint_2_limit_upper="${M_PI}" 
+     arm_joint_3_limit_lower="${-2.9}" 
+     arm_joint_3_limit_upper="${0.6}"
+     arm_joint_4_limit_lower="${-M_PI}"
+     arm_joint_4_limit_upper="${4.71}"  
+     arm_joint_5_limit_lower="${-1.47}"   
+     arm_joint_5_limit_upper="${1.47}"   
+     arm_joint_6_limit_lower="${-2.54}"   
+     arm_joint_6_limit_upper="${0.9}"
+                           
+     j1_offset="${l_arm_j1_offset}"
+     j2_offset="${l_arm_j2_offset}"
+     j3_offset="${l_arm_j3_offset}"
+     j4_offset="${l_arm_j4_offset}"
+     j5_offset="${l_arm_j5_offset}"
+     j6_offset="${l_arm_j6_offset}">     
+    <origin xyz="0.0 0.234 0.165" rpy="0 ${0 + l_arm_j0_offset} 0"/>
+  </thor_arm_7dof_simple_with_offsets_macro>
+ 
+  <thor_arm_7dof_simple_with_offsets_macro parent="utorso" name="r" reflect="-1"
+     arm_joint_0_limit_lower="${-2.3}"
+     arm_joint_0_limit_upper="${M_PI}"
+     arm_joint_1_limit_lower="${-0.05}"
+     arm_joint_1_limit_upper="${M_PI}" 
+     arm_joint_2_limit_lower="${-M_PI}"
+     arm_joint_2_limit_upper="${M_PI*0.5}" 
+     arm_joint_3_limit_lower="${-0.6}" 
+     arm_joint_3_limit_upper="${2.9}"
+     arm_joint_4_limit_lower="${-4.71}"
+     arm_joint_4_limit_upper="${M_PI}"  
+     arm_joint_5_limit_lower="${-1.47}"   
+     arm_joint_5_limit_upper="${1.47}"   
+     arm_joint_6_limit_lower="${-0.9}"   
+     arm_joint_6_limit_upper="${2.54}"
+
+     j1_offset="${r_arm_j1_offset}"
+     j2_offset="${r_arm_j2_offset}"
+     j3_offset="${r_arm_j3_offset}"
+     j4_offset="${r_arm_j4_offset}"
+     j5_offset="${r_arm_j5_offset}"
+     j6_offset="${r_arm_j6_offset}">
+    <origin xyz="0.0 -0.234 0.165" rpy="0 ${0 + r_arm_j0_offset} 0"/>
+  </thor_arm_7dof_simple_with_offsets_macro>
+  
+  <thor_head_pan_tilt_unit_macro parent="utorso" name="head" head_link_name="head_link"
+     j1_offset="${head_j1_offset}">
+    <origin xyz="0.0 0.0 0.320" rpy="0 ${0 + head_j0_offset} 0"/>
+  </thor_head_pan_tilt_unit_macro>
+  
+  <thor_lidar_camera_head_macro head_link_name="head_link">
+  </thor_lidar_camera_head_macro>
+  
+  <thor_lidar_pan_unit_macro parent="utorso" name="waist">
+    <origin xyz="0.0 0.0 0.0878" rpy="0 ${0 + head_j0_offset} 0"/>
+  </thor_lidar_pan_unit_macro>
+  
+-->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>robotis_op</robotNamespace>
+    </plugin>
+  </gazebo>
+</macro>
+      
+</robot>

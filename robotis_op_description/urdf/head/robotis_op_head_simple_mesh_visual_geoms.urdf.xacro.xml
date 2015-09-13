@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="neck_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/neck.STL"  scale="1 1 1"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+</macro>  
+
+<macro name="neck_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/head.STL"  scale="1 1 1"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+</macro>  
+
+
+<macro name="pmdcamboard_geom_macro">
+</macro>  
+
+</robot>

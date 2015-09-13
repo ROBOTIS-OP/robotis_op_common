@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="body_geom_macro">
+    <visual>
+      <origin xyz="0 0 0"
+	      rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/body.STL"  scale="1 1 1"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+</macro>  
+
+</robot>

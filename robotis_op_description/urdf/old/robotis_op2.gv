@@ -16,9 +16,6 @@ node [shape=box];
 "MP_ARM_GRIPPER_FIX_R" [label="MP_ARM_GRIPPER_FIX_R"];
 "MP_ARM_GRIPPER_MOV_R" [label="MP_ARM_GRIPPER_MOV_R"];
 "MP_ARM_GRIPPER_FIX_DUMMY_R" [label="MP_ARM_GRIPPER_FIX_DUMMY_R"];
-"MP_NECK" [label="MP_NECK"];
-"MP_HEAD" [label="MP_HEAD"];
-"MP_PMDCAMBOARD" [label="MP_PMDCAMBOARD"];
 "MP_PELVIS_L" [label="MP_PELVIS_L"];
 "MP_THIGH1_L" [label="MP_THIGH1_L"];
 "MP_THIGH2_L" [label="MP_THIGH2_L"];
@@ -32,7 +29,7 @@ node [shape=box];
 "MP_ANKLE1_R" [label="MP_ANKLE1_R"];
 "MP_ANKLE2_R" [label="MP_ANKLE2_R"];
 node [shape=ellipse, color=blue, fontcolor=blue];
-"base_link" -> "base_link_to_body" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"base_link" -> "base_link_to_body" [label="xyz: 0 0 0.35 \nrpy: 0 -0 0"]
 "base_link_to_body" -> "MP_BODY"
 "MP_BODY" -> "j_back_l" [label="xyz: 0 0.06035 0 \nrpy: -1.5708 0 0"]
 "j_back_l" -> "MP_BACK_L"
@@ -62,12 +59,6 @@ node [shape=ellipse, color=blue, fontcolor=blue];
 "j_gripper_r" -> "MP_ARM_GRIPPER_MOV_R"
 "MP_ARM_GRIPPER_FIX_R" -> "j_wrist_dummy_r" [label="xyz: 0.064 -0.01 0 \nrpy: 0 -0 0"]
 "j_wrist_dummy_r" -> "MP_ARM_GRIPPER_FIX_DUMMY_R"
-"MP_BODY" -> "j_pan" [label="xyz: 0 0 0.0235 \nrpy: 0 -0 1.5708"]
-"j_pan" -> "MP_NECK"
-"MP_NECK" -> "j_tilt" [label="xyz: 0 0 0.02715 \nrpy: -1.5708 -5.55112e-17 1.5708"]
-"j_tilt" -> "MP_HEAD"
-"MP_HEAD" -> "j_camboard" [label="xyz: 0 0 0.0235 \nrpy: 3.14159 1.5708 0"]
-"j_camboard" -> "MP_PMDCAMBOARD"
 "MP_BODY" -> "j_pelvis_l" [label="xyz: -0.005 0.037 -0.09355 \nrpy: 3.14159 2.65359e-06 1.5708"]
 "j_pelvis_l" -> "MP_PELVIS_L"
 "MP_PELVIS_L" -> "j_thigh1_l" [label="xyz: 0 0 0.028652 \nrpy: 1.5708 -0 0"]

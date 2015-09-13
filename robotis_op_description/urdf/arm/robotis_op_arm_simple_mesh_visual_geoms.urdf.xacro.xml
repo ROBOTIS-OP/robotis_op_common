@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="back_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001"  scale="1 1 1"/>
+      </geometry>
+      <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="shoulder_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/shoulder_l.STL"  scale="1 1 1"/>
+      </geometry>
+      <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_high_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/arm_high_l.STL"  scale="1 1 1"/>
+      </geometry>
+      <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_low_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0.016 0.016 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.032 0.032 0.035" />
+      </geometry>
+      <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_gripper_fix_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.064 0.032 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_gripper_fix_dummy_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.032 0.005 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_gripper_mov_l_visual_geom_macro">
+    <visual name="VIS_MP_ARM_GRIPPER_MOV_L">
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.032 0.005 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+    <visual name="VIS_MP_ARM_GRIPPER_MOV_EXT_L">
+      <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.002 0.01 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="back_r_visual_geom_macro">    
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="shoulder_r_visual_geom_macro">    
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/shoulder_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_high_r_visual_geom_macro"> 
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/arm_high_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_low_r_visual_geom_macro"> 
+    <visual>
+      <origin xyz="0.016 -0.016 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.032 0.032 0.035" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_gripper_fix_r_visual_geom_macro"> 
+    <visual>
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.064 0.032 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_gripper_fix_dummy_r_visual_geom_macro"> 
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.032 0.005 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="arm_gripper_mov_r_visual_geom_macro"> 
+    <visual name="VIS_MP_ARM_GRIPPER_MOV_R">
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.032 0.005 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+    <visual name="VIS_MP_ARM_GRIPPER_MOV_EXT_R">
+      <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.002 0.01 0.032" />
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+
+
+</robot>

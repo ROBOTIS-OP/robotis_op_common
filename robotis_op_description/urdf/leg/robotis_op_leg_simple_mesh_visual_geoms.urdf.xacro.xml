@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="pelvis_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/pelvis_l.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="thigh1_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh1_l.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="thigh2_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh2_l.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="tibia_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/tibia_l.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="ankle1_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle1_l.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="ankle2_l_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle2_l.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="pelvis_r_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/pelvis_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="thigh1_r_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh1_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="thigh2_r_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh2_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="tibia_r_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/tibia_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="ankle1_r_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle1_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+<macro name="ankle2_r_visual_geom_macro">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle2_r.STL"  scale="1 1 1"/>
+      </geometry>
+       <xacro:grey/>
+    </visual>
+</macro> 
+
+</robot>

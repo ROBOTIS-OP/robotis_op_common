@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="robotis_op_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <property name="DAMPING" value="0.1"/>
+  <property name="FRICTION" value="0"/>
+    
+  <property name="M_PI" value="3.1415926535897931" />
+  <property name="M_PI_2" value="1.57079632679" />
+
+  <!-- unit conversions --> 
+  <property name="deg2rad" value="0.0174532925" /> 
+  <property name="rad2deg" value="57.2957795" />
+  <property name="in_m" value="0.0254" />
+  <property name="ft_m" value="0.3048"/>
+
+  <property name="lb-in-in_kg-m-m" value="0.0421"/>
+  <property name="lb-mm-mm_kg-m-m" value="0.0000004536"/> <!-- inventor sometimes gives ridiculous units -->
+  <property name="mm_m" value = "0.001"/>
+  <property name="cm_m" value = "0.01"/> <!-- such conversion factors make description easier to read -->
+  <property name="lb_kg" value="0.4536"/>
+
+ 
+  
+
+</robot>
+
