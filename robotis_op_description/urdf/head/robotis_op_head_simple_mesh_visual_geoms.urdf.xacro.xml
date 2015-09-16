@@ -12,7 +12,7 @@
     </visual>
 </macro>  
 
-<macro name="neck_geom_macro">
+<macro name="head_geom_macro">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>

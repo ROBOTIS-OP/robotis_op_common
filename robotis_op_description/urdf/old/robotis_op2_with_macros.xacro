@@ -35,11 +35,6 @@
       <mass value="0.97559947"/>
       <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/body_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
 
@@ -49,11 +44,6 @@
       <mass value="0.010"/>
       <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
     </inertial>
-    <collision>
-      <geometry>
-        <box size="0.001 0.001 0.001"  scale="1 1 1"/>
-      </geometry>
-    </collision>
 
   </link>
 
@@ -62,13 +52,7 @@
       <origin xyz="-0.013522619 0.010264050 0.0013935747" />
       <mass value="0.025913024"/>
       <inertia ixx="0.0097758165"  ixy="0.0016911839"  ixz="-0.00045174329" iyx="0.0016911839" iyy="0.010511104" iyz="0.00033406955" izx="-0.00045174329" izy="0.00033406955" izz="0.005476798" />
-    </inertial>
-    
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/shoulder_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
+    </inertial>    
   </link>
 
   <link name="MP_ARM_HIGH_L" >
@@ -77,11 +61,6 @@
       <mass value="0.16837715"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/arm_high_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_LOW_L" >
@@ -90,13 +69,6 @@
       <mass value="0.059288504"/>
       <inertia ixx="0.086855267"  ixy="0.0053020311"  ixz="0.00043636051" iyx="0.0053020311" iyy="0.021192085" iyz="-0.0064855932" izx="0.00043636051" izy="-0.0064855932" izz="0.086845450" />
     </inertial>
-
-    <collision>
-      <origin xyz="0.016 0.016 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.032 0.032 0.035" />
-      </geometry>
-    </collision>
   </link>
 
 
@@ -106,12 +78,6 @@
       <mass value="0.010"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial>
-    <collision>
-      <origin xyz="0.016 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.064 0.032 0.032" />
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_GRIPPER_FIX_DUMMY_L" >
@@ -120,11 +86,6 @@
       <mass value="0.010"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial> 
-    <collision>
-      <geometry>
-        <box size="0.032 0.005 0.032" />
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_GRIPPER_MOV_L" >
@@ -133,19 +94,6 @@
       <mass value="0.010"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial>
-    <collision name="COL_MP_ARM_GRIPPER_MOV_L">
-      <origin xyz="0.016 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.032 0.005 0.032" />
-      </geometry>
-    </collision>
-    <collision name="COL_MP_ARM_GRIPPER_MOV_EXT_L">
-      <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.002 0.01 0.032" />
-      </geometry>
-    </collision>
-
   </link>
 
   <link name="MP_BACK_R">
@@ -153,13 +101,7 @@
       <origin xyz="0 0 0" />
       <mass value="0.010"/>
       <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
-    </inertial>
-    <collision>
-      <geometry>
-        <box size="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-    
+    </inertial>    
   </link>
 
   <link name="MP_SHOULDER_R" >
@@ -168,12 +110,6 @@
       <mass value="0.025913024"/>
       <inertia ixx="0.0097758165"  ixy="0.0016911839"  ixz="-0.00045174329" iyx="0.0016911839" iyy="0.010511104" iyz="0.00033406955" izx="-0.00045174329" izy="0.00033406955" izz="0.005476798" />
     </inertial>
-    <collision>
-      <origin xyz="0 0 0" rpy="1.5707963  0 3.14" />
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/shoulder_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_HIGH_R" >
@@ -182,11 +118,6 @@
       <mass value="0.16837715"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/arm_high_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_LOW_R" >
@@ -195,12 +126,6 @@
       <mass value="0.059288504"/>
       <inertia ixx="0.086855267"  ixy="0.0053020311"  ixz="0.00043636051" iyx="0.0053020311" iyy="0.021192085" iyz="-0.0064855932" izx="0.00043636051" izy="-0.0064855932" izz="0.086845450" />
     </inertial>
-    <collision>
-      <origin xyz="0.016 -0.016 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.032 0.032 0.035" />
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_GRIPPER_FIX_R" >
@@ -209,12 +134,6 @@
       <mass value="0.010"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial>
-    <collision>
-      <origin xyz="0.016 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.064 0.032 0.032" />
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_GRIPPER_FIX_DUMMY_R" >
@@ -223,11 +142,6 @@
       <mass value="0.010"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial> 
-    <collision>
-      <geometry>
-        <box size="0.032 0.005 0.032" />
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ARM_GRIPPER_MOV_R" >
@@ -236,18 +150,6 @@
       <mass value="0.010"/>
       <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
     </inertial>
-    <collision name="COL_MP_ARM_GRIPPER_MOV_R">
-      <origin xyz="0.016 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.032 0.005 0.032" />
-      </geometry>
-    </collision>
-    <collision name="COL_MP_ARM_GRIPPER_MOV_EXT_R">
-      <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.002 0.01 0.032" />
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_PELVIS_L" >
@@ -256,11 +158,6 @@
       <mass value="0.167"/>
       <inertia ixx="0.12259691"  ixy="0.00071127469"  ixz="0.00081143913" iyx="0.00071127469" iyy="0.11066637" iyz="-0.0071635476" izx="0.00081143913" izy="-0.0071635476" izz="0.041877668" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/pelvis_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_THIGH1_L" >
@@ -269,11 +166,6 @@
       <mass value="0.11904336"/>
       <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/thigh1_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_THIGH2_L" >
@@ -282,11 +174,6 @@
       <mass value="0.11904336"/>
       <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/thigh2_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_TIBIA_L" >
@@ -295,11 +182,6 @@
       <mass value="0.070309794"/>
       <inertia ixx="0.093369608"  ixy="-0.00093567395"  ixz="-0.00023992085" iyx="-0.00093567395" iyy="0.046295534" iyz="-0.012858493" izx="-0.00023992085" izy="-0.012858493" izz="0.11351516" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/tibia_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ANKLE1_L" >
@@ -308,11 +190,6 @@
       <mass value="0.16710792"/>
       <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/ankle1_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_ANKLE2_L" >
@@ -321,11 +198,6 @@
       <mass value="0.0794462"/>
       <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/ankle2_l_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_PELVIS_R" >
@@ -334,11 +206,6 @@
       <mass value="0.197"/>
       <inertia ixx="0.12259691"  ixy="0.00071127469"  ixz="0.00081143913" iyx="0.00071127469" iyy="0.11066637" iyz="-0.0071635476" izx="0.00081143913" izy="-0.0071635476" izz="0.041877668" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/pelvis_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_THIGH1_R" >
@@ -347,12 +214,6 @@
       <mass value="0.11904336"/>
       <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/thigh1_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
-
   </link>
 
   <link name="MP_THIGH2_R" >
@@ -361,12 +222,6 @@
       <mass value="0.11904336"/>
       <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/thigh2_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
-
   </link>
 
   <link name="MP_TIBIA_R" >
@@ -375,12 +230,6 @@
       <mass value="0.070309794"/>
       <inertia ixx="0.093369608"  ixy="-0.00093567395"  ixz="-0.00023992085" iyx="-0.00093567395" iyy="0.046295534" iyz="-0.012858493" izx="-0.00023992085" izy="-0.012858493" izz="0.11351516" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/tibia_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
-
   </link>
 
   <link name="MP_ANKLE1_R" >
@@ -389,12 +238,6 @@
       <mass value="0.16710792"/>
       <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/ankle1_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
-
   </link>
 
   <link name="MP_ANKLE2_R" >
@@ -403,12 +246,6 @@
       <mass value="0.0794462"/>
       <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/ankle2_r_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
-
   </link>
   
  

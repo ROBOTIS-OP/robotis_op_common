@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="body_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/body_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro>  
+
+</robot>

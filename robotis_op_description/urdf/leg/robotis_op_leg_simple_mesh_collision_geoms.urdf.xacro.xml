@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="pelvis_l_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/pelvis_l_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh1_l_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh1_l_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh2_l_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh2_l_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="tibia_l_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/tibia_l_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle1_l_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle1_l_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle2_l_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle2_l_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="pelvis_r_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/pelvis_r_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh1_r_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh1_r_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh2_r_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/thigh2_r_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="tibia_r_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/tibia_r_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle1_r_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle1_r_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle2_r_collision_geom_macro">
+    <collision>
+      <geometry>
+        <mesh filename="package://robotis_op_description/meshes/ankle2_r_coll.stl"  scale="1 1 1"/>
+      </geometry>
+    </collision>
+</macro> 
+
+</robot>

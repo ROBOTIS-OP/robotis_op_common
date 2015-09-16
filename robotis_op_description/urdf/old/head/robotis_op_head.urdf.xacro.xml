@@ -13,11 +13,6 @@
       <mass value="0.024357719"/>
      <inertia ixx="0.0051411124"  ixy="-0.00057530255"  ixz="-0.000024729049" iyy="0.0081915737" iyz="-0.000019223094" izz="0.0011379812" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/neck_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
   <link name="MP_HEAD">
@@ -26,11 +21,6 @@
       <mass value="0.15804192"/>
      <inertia ixx="0.1239683"  ixy="0.000078494368"  ixz="0.000007645979" iyy="0.11783781" iyz="0.0012199205" izz="0.1583601" />
     </inertial>
-    <collision>
-      <geometry>
-        <mesh filename="package://robotis_op_description/meshes/head_coll.stl"  scale="1 1 1"/>
-      </geometry>
-    </collision>
   </link>
 
  <link name="MP_PMDCAMBOARD" >
