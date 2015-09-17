@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="body_collision_geom_macro">
+    <collision>
+      <origin xyz="-0.0235 0 -0.03525" rpy="0 0 0" />
+      <geometry>
+        <box size="0.102 0.109 0.106" />
+      </geometry>
+    </collision>
+</macro>  
+
+</robot>

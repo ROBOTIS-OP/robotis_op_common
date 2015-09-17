@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="pelvis_l_collision_geom_macro">
+    <collision>
+      <origin xyz="0.000000 -0.010580 0.028437" />
+      <geometry>
+        <box size="0.045 0.08175 0.028652" />
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh1_l_collision_geom_macro">
+    <collision>
+      <origin xyz="0.000079 0.018242 0.013873" />
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh2_l_collision_geom_macro">
+    <collision>
+      <origin xyz="-0.062965 -0.000323 0.000692" />
+      <geometry>
+        <box size="0.093 0.035 0.045"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="tibia_l_collision_geom_macro">
+    <collision>
+      <origin xyz="-0.053955 0.006548 -0.000592" />
+      <geometry>
+        <box size="0.093 0.035 0.045"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle1_l_collision_geom_macro">
+    <collision>
+      <origin xyz="-0.000214 -0.018536 0.013873" />
+      <geometry>
+        <box size="0.028652 0.08175 0.045"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle2_l_collision_geom_macro">
+    <collision>
+      <origin xyz="-0.025995 -0.009506 -0.000503" />
+      <geometry>
+        <box size="0.008 0.066 0.104"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="pelvis_r_collision_geom_macro">
+    <collision>
+      <origin xyz="0.000000 0.010580 0.028437" />
+      <geometry>
+        <box size="0.045 0.08175 0.028652" />
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh1_r_collision_geom_macro">
+    <collision>
+      <origin xyz="0.000079 -0.018242 0.0138735" />
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="thigh2_r_collision_geom_macro">
+    <collision>
+      <origin xyz="0.062965 -0.000323 0.000692" />
+      <geometry>
+        <box size="0.093 0.035 0.045"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="tibia_r_collision_geom_macro">
+    <collision>
+      <origin xyz="0.053955 0.006548 -0.000592" />
+      <geometry>
+        <box size="0.093 0.035 0.045"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle1_r_collision_geom_macro">
+    <collision>
+      <origin xyz="-0.000214 -0.018536 -0.013873" />
+      <geometry>
+        <box size="0.028652 0.08175 0.045"/>
+      </geometry>
+    </collision>
+</macro> 
+
+<macro name="ankle2_r_collision_geom_macro">
+    <collision>
+      <origin xyz="0.025995 -0.009506 -0.000503" />
+      <geometry>
+        <box size="0.008 0.066 0.104"/>
+      </geometry>
+    </collision>
+</macro> 
+
+</robot>

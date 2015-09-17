@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<macro name="neck_collision_geom_macro">
+    <collision>
+      <origin xyz="0.0 -0.0 0.01525" />
+      <geometry>
+        <box size="0.045 0.022 0.0325" />
+      </geometry>
+    </collision>
+</macro>  
+
+<macro name="head_collision_geom_macro">
+    <collision>
+      <origin xyz="0.000064 -0.018565 -0.0" />
+      <geometry>
+        <sphere radius="0.044" />
+      </geometry>
+    </collision>
+</macro>  
+
+
+<macro name="pmdcamboard_geom_macro">
+</macro>  
+
+</robot>
