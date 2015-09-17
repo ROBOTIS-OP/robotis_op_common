@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Set the robot's name -->
+<robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <macro name="robotis_op_torso_macro">
+
+  <link name="base_link"/>  
+
+  <link name="MP_BODY">
+    <inertial>
+      <origin xyz="-0.003053 -0.038651 -0.019268" />
+      <mass value="0.97559947"/>
+      <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
+    </inertial>
+    <body_collision_geom_macro />
+    <body_visual_geom_macro />
+  </link>
+
+  <joint name="base_link_to_body" type="fixed">
+    <parent link="base_link"/>
+    <child link="MP_BODY"/>
+    <origin xyz="0 0 0.35" rpy="0 0 0"/>
+  </joint>
+
+
+      <gazebo>
+        <plugin filename="libhector_gazebo_ros_imu.so" name="gazebo_ros_imu">
+          <bodyName>MP_BODY</bodyName>
+          <updateRate>50</updateRate>
+          <serviceName>/robotis_op/imu_service</serviceName>
+          <topicName>/robotis_op/imu</topicName>
+          <gaussianNoise>0</gaussianNoise>
+          <xyzOffset>0 0 0</xyzOffset>
+          <rpyOffset>0 0 -0.703220730592</rpyOffset>
+        </plugin>     
+      </gazebo>  
+
+  </macro>
+</robot>

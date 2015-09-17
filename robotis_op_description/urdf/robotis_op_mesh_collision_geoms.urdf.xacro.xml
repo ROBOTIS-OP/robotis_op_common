@@ -2,7 +2,7 @@
 
 <robot name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find thor_mang_description)/urdf/constants.xacro" />  
+  <xacro:include filename="$(find robotis_op_description)/urdf/constants.xacro" />  
 
   <xacro:include filename="$(find robotis_op_description)/urdf/head/robotis_op_head_simple_mesh_collision_geoms.urdf.xacro.xml" /> 
   <xacro:include filename="$(find robotis_op_description)/urdf/leg/robotis_op_leg_simple_mesh_collision_geoms.urdf.xacro.xml" />  

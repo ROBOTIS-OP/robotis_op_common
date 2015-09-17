@@ -2,7 +2,7 @@
 
 <robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<macro name="neck_geom_macro">
+<macro name="neck_visual_geom_macro">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
@@ -12,7 +12,7 @@
     </visual>
 </macro>  
 
-<macro name="head_geom_macro">
+<macro name="head_visual_geom_macro">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>

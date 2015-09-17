@@ -2,7 +2,7 @@
 
 <robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<macro name="body_geom_macro">
+<macro name="body_visual_geom_macro">
     <visual>
       <origin xyz="0 0 0"
 	      rpy="0 0 0" />

@@ -2,7 +2,7 @@
 
 <robot  name="robotis_op2" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<macro name="body_geom_macro">
+<macro name="body_collision_geom_macro">
     <collision>
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/body_coll.stl"  scale="1 1 1"/>
