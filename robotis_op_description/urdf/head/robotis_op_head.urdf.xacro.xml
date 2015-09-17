@@ -5,21 +5,17 @@
   <macro name="robotis_op_head_macro">
 
    <link name="MP_NECK">
-    <inertial>
-      <origin xyz="0.001424 -0.016567 -0.007128" />
-      <mass value="0.024357719"/>
-     <inertia ixx="0.0051411124"  ixy="-0.00057530255"  ixz="-0.000024729049" iyy="0.0081915737" iyz="-0.000019223094" izz="0.0011379812" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.024357719" x_length="0.045" y_length="0.022" z_length="0.0325" >
+      <origin xyz="0.0 -0.0 0.01525" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <neck_collision_geom_macro />
     <neck_visual_geom_macro />
   </link>
 
   <link name="MP_HEAD">
-    <inertial>
-      <origin xyz="0.000064 -0.018565 -0.007667" />
-      <mass value="0.15804192"/>
-     <inertia ixx="0.1239683"  ixy="0.000078494368"  ixz="0.000007645979" iyy="0.11783781" iyz="0.0012199205" izz="0.1583601" />
-    </inertial>
+    <xacro:inertial_sphere_with_pose_macro mass="0.15804192" diameter="0.088">
+      <origin xyz="0.000064 -0.018565 -0.0" />
+    </xacro:inertial_sphere_with_pose_macro>
     <head_collision_geom_macro />
     <head_visual_geom_macro />
   </link>

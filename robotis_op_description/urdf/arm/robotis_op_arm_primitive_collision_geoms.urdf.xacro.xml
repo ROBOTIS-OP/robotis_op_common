@@ -13,7 +13,7 @@
 
 <macro name="shoulder_l_collision_geom_macro">
     <collision>
-      <origin xyz="-0.013522619 0.010264050 0.0013935747" />
+      <origin xyz="-0.013522619 -0.010264050 0.0013935747" />
       <geometry>
         <box size="0.016 0.033 0.02165" />
       </geometry>

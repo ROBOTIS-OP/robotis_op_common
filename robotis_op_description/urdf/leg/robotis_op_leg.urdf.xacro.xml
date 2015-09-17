@@ -6,121 +6,97 @@
 
 
  <link name="MP_PELVIS_L" >
-    <inertial>
-      <origin xyz="0.000000 0.000480 0.018437" />
-      <mass value="0.167"/>
-      <inertia ixx="0.12259691"  ixy="0.00071127469"  ixz="0.00081143913" iyx="0.00071127469" iyy="0.11066637" iyz="-0.0071635476" izx="0.00081143913" izy="-0.0071635476" izz="0.041877668" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.167" x_length="0.045" y_length="0.08175" z_length="0.028652" >
+      <origin xyz="0.000000 -0.010580 0.028437" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <pelvis_l_collision_geom_macro />
     <pelvis_l_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH1_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.001" y_length="0.001" z_length="0.001" >
       <origin xyz="0.000079 0.018242 0.013873" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh1_l_collision_geom_macro />
     <thigh1_l_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH2_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="-0.062965 -0.000323 0.000692" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh2_l_collision_geom_macro />
     <thigh2_l_visual_geom_macro />
   </link>
 
   <link name="MP_TIBIA_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.070309794" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="-0.053955 0.006548 -0.000592" />
-      <mass value="0.070309794"/>
-      <inertia ixx="0.093369608"  ixy="-0.00093567395"  ixz="-0.00023992085" iyx="-0.00093567395" iyy="0.046295534" iyz="-0.012858493" izx="-0.00023992085" izy="-0.012858493" izz="0.11351516" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <tibia_l_collision_geom_macro />
     <tibia_l_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE1_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.16710792" x_length="0.028652" y_length="0.08175" z_length="0.045" >
       <origin xyz="-0.000214 -0.018536 0.013873" />
-      <mass value="0.16710792"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle1_l_collision_geom_macro />
     <ankle1_l_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE2_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.0794462" x_length="0.008" y_length="0.066" z_length="0.104" >
       <origin xyz="-0.025995 -0.009506 -0.000503" />
-      <mass value="0.0794462"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle2_l_collision_geom_macro />
     <ankle2_l_visual_geom_macro />
   </link>
 
   <link name="MP_PELVIS_R" >
-    <inertial>
-      <origin xyz="0.000000 0.000480 0.018437" />
-      <mass value="0.197"/>
-      <inertia ixx="0.12259691"  ixy="0.00071127469"  ixz="0.00081143913" iyx="0.00071127469" iyy="0.11066637" iyz="-0.0071635476" izx="0.00081143913" izy="-0.0071635476" izz="0.041877668" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.197" x_length="0.045" y_length="0.08175" z_length="0.028652" >
+      <origin xyz="0.000000 0.010580 0.028437" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <pelvis_r_collision_geom_macro />
     <pelvis_r_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH1_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.001" y_length="0.001" z_length="0.001" >
       <origin xyz="0.000079 -0.018242 0.0138735" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh1_r_collision_geom_macro />
     <thigh1_r_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH2_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="0.062965 -0.000323 0.000692" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh2_r_collision_geom_macro />
     <thigh2_r_visual_geom_macro />
   </link>
 
   <link name="MP_TIBIA_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.070309794" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="0.053955 0.006548 -0.000592" />
-      <mass value="0.070309794"/>
-      <inertia ixx="0.093369608"  ixy="-0.00093567395"  ixz="-0.00023992085" iyx="-0.00093567395" iyy="0.046295534" iyz="-0.012858493" izx="-0.00023992085" izy="-0.012858493" izz="0.11351516" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <tibia_r_collision_geom_macro />
     <tibia_r_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE1_R" >
-    <inertial>
-      <origin xyz="-0.000214 -0.018536 -0.013873" />
-      <mass value="0.16710792"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.16710792" x_length="0.028652" y_length="0.08175" z_length="0.045" >
+      <origin xyz="-0.000214 -0.018536 0.013873" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle1_r_collision_geom_macro />
     <ankle1_r_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE2_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.0794462" x_length="0.008" y_length="0.066" z_length="0.104" >
       <origin xyz="0.025995 -0.009506 -0.000503" />
-      <mass value="0.0794462"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle2_r_collision_geom_macro />
     <ankle2_r_visual_geom_macro />
   </link>
