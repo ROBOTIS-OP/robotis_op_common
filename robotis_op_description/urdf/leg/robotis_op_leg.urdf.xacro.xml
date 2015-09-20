@@ -250,8 +250,8 @@
     <mu2>9000</mu2>
     <kp>1000000.0</kp>
     <kd>10.0</kd>
-    <minDepth>0.001</minDepth>
-    <maxContacts>1</maxContacts>    
+    <minDepth>0.000001</minDepth>
+    <maxContacts>100</maxContacts>    
   </gazebo>
 
 
@@ -267,8 +267,8 @@
     <mu2>9000</mu2>
     <kp>1000000.0</kp>
     <kd>10.0</kd>
-    <minDepth>0.001</minDepth>
-    <maxContacts>1</maxContacts>    
+    <minDepth>0.000001</minDepth>
+    <maxContacts>100</maxContacts>    
   </gazebo>
 
   </macro>
