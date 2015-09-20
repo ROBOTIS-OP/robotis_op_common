@@ -6,142 +6,114 @@
   <macro name="robotis_op_arm_macro">
 
   <link name="MP_BACK_L">
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.01" y_length="0.01" z_length="0.01" >
       <origin xyz="-0.0031158909 0.020443695 -0.019663084" />
-      <mass value="0.010"/>
-      <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:back_l_collision_geom_macro />
     <xacro:back_l_visual_geom_macro />
   </link>  
 
   <link name="MP_SHOULDER_L">
-    <inertial>
-      <origin xyz="-0.013522619 0.010264050 0.0013935747" />
-      <mass value="0.025913024"/>
-      <inertia ixx="0.0097758165"  ixy="0.0016911839"  ixz="-0.00045174329" iyx="0.0016911839" iyy="0.010511104" iyz="0.00033406955" izx="-0.00045174329" izy="0.00033406955" izz="0.005476798" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.025913024" x_length="0.016" y_length="0.033" z_length="0.02165" >
+      <origin xyz="-0.013522619 -0.010264050 0.0013935747" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:shoulder_l_collision_geom_macro />
     <xacro:shoulder_l_visual_geom_macro />  
   </link>
 
   <link name="MP_ARM_HIGH_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.16837715" x_length="0.06" y_length="0.032" z_length="0.035" >
       <origin xyz="-0.036239 0.000734 0.000660" />
-      <mass value="0.16837715"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_high_l_collision_geom_macro />
     <xacro:arm_high_l_visual_geom_macro />  
   </link>
 
   <link name="MP_ARM_LOW_L" >
-    <inertial>
-      <origin xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.059288504"/>
-      <inertia ixx="0.086855267"  ixy="0.0053020311"  ixz="0.00043636051" iyx="0.0053020311" iyy="0.021192085" iyz="-0.0064855932" izx="0.00043636051" izy="-0.0064855932" izz="0.086845450" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.059288504" x_length="0.032" y_length="0.032" z_length="0.035" >
+      <origin xyz="0.016 0.016 0" rpy="0 0 0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_low_l_collision_geom_macro />
     <xacro:arm_low_l_visual_geom_macro /> 
   </link>
 
 
  <link name="MP_ARM_GRIPPER_FIX_L" >
-    <inertial>
-      <origin xyz="0.045838 -0.013490 0.006666"/>
-      <mass value="0.010"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.032" y_length="0.005" z_length="0.032" >
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_gripper_fix_l_collision_geom_macro />
     <xacro:arm_gripper_fix_l_visual_geom_macro /> 
   </link>
 
   <link name="MP_ARM_GRIPPER_FIX_DUMMY_L" >
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.010"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial> 
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.032" y_length="0.005" z_length="0.032" >
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_gripper_fix_dummy_l_collision_geom_macro />
     <xacro:arm_gripper_fix_dummy_l_visual_geom_macro /> 
   </link>
 
   <link name="MP_ARM_GRIPPER_MOV_L" >
-    <inertial>
-      <origin xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.010"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.032" y_length="0.005" z_length="0.032" >
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_gripper_mov_l_collision_geom_macro />
     <xacro:arm_gripper_mov_l_visual_geom_macro />
   </link>
 
   <link name="MP_BACK_R">
-    <inertial>
-      <origin xyz="0 0 0" />
-      <mass value="0.010"/>
-      <inertia ixx="3.1081800"  ixy="-0.25460189"  ixz="2.0318174" iyy="6.3787776" iyz="0.16417863" izz="5.3316425" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.01" y_length="0.01" z_length="0.01" >
+      <origin xyz="0.0031158909 0.020443695 -0.019663084" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:back_r_collision_geom_macro />
     <xacro:back_r_visual_geom_macro />   
   </link>
 
   <link name="MP_SHOULDER_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.025913024" x_length="0.016" y_length="0.033" z_length="0.02165" >
       <origin xyz="-0.013523 0.010264 0.001394" />
-      <mass value="0.025913024"/>
-      <inertia ixx="0.0097758165"  ixy="0.0016911839"  ixz="-0.00045174329" iyx="0.0016911839" iyy="0.010511104" iyz="0.00033406955" izx="-0.00045174329" izy="0.00033406955" izz="0.005476798" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:shoulder_r_collision_geom_macro />
     <xacro:shoulder_r_visual_geom_macro />  
   </link>
 
   <link name="MP_ARM_HIGH_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.16837715" x_length="0.06" y_length="0.032" z_length="0.035" >
       <origin xyz="-0.036239 0.000734 -0.000660" />
-      <mass value="0.16837715"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_high_r_collision_geom_macro />
     <xacro:arm_high_r_visual_geom_macro />  
   </link>
 
   <link name="MP_ARM_LOW_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.059288504" x_length="0.032" y_length="0.032" z_length="0.035" >
       <origin xyz="0.000000 0.000000 0.000000" />
-      <mass value="0.059288504"/>
-      <inertia ixx="0.086855267"  ixy="0.0053020311"  ixz="0.00043636051" iyx="0.0053020311" iyy="0.021192085" iyz="-0.0064855932" izx="0.00043636051" izy="-0.0064855932" izz="0.086845450" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_low_r_collision_geom_macro />
     <xacro:arm_low_r_visual_geom_macro />
   </link>
 
   <link name="MP_ARM_GRIPPER_FIX_R" >
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.010"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial> 
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.032" y_length="0.005" z_length="0.032" >
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_gripper_fix_r_collision_geom_macro />
     <xacro:arm_gripper_fix_r_visual_geom_macro />
   </link>
 
   <link name="MP_ARM_GRIPPER_FIX_DUMMY_R" >
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.010"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial> 
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.032" y_length="0.005" z_length="0.032" >
+      <origin xyz="0.0 0.0 0.0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_gripper_fix_dummy_r_collision_geom_macro />
     <xacro:arm_gripper_fix_dummy_r_visual_geom_macro />
   </link>
 
   <link name="MP_ARM_GRIPPER_MOV_R" >
-    <inertial>
-      <origin xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.010"/>
-      <inertia ixx="0.12202839"  ixy="-0.0020812626"  ixz="-0.00088143449" iyx="-0.0020812626" iyy="0.038088441" iyz="0.0018251448" izx="-0.00088143449" izy="0.0018251448" izz="0.11340830" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.010" x_length="0.032" y_length="0.005" z_length="0.032" >
+      <origin xyz="0.016 0 0" rpy="0 0 0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <xacro:arm_gripper_mov_r_collision_geom_macro />
     <xacro:arm_gripper_mov_r_visual_geom_macro />
   </link>

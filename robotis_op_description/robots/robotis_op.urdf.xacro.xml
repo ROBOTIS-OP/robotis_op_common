@@ -11,15 +11,15 @@
 
   <xacro:include filename="$(find robotis_op_description)/urdf/arm/robotis_op_arm.urdf.xacro" />
   <xacro:include filename="$(find robotis_op_description)/urdf/torso/robotis_op_torso.urdf.xacro" />
-  <xacro:include filename="$(find robotis_op_description)/urdf/leg/robotis_op_leg.urdf.xacro.xml" />  
+<xacro:include filename="$(find robotis_op_description)/urdf/leg/robotis_op_leg.urdf.xacro.xml" /> 
   <xacro:include filename="$(find robotis_op_description)/urdf/head/robotis_op_head.urdf.xacro.xml" />
 
   <macro name="robotis_op_macro">
  
   <robotis_op_torso_macro />
   <robotis_op_arm_macro />
-  <robotis_op_leg_macro />
   <robotis_op_head_macro />
+  <robotis_op_leg_macro />
 
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">

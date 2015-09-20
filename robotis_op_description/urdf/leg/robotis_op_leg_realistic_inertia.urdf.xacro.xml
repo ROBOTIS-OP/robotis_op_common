@@ -4,128 +4,105 @@
 
   <macro name="robotis_op_leg_macro">
 
+
  <link name="MP_PELVIS_L" >
-    <inertial>
-      <origin xyz="0.000000 0.000480 0.018437" />
-      <mass value="0.167"/>
-      <inertia ixx="0.12259691"  ixy="0.00071127469"  ixz="0.00081143913" iyx="0.00071127469" iyy="0.11066637" iyz="-0.0071635476" izx="0.00081143913" izy="-0.0071635476" izz="0.041877668" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.197" x_length="0.025" y_length="0.045" z_length="0.032" >
+      <origin xyz="0.0 0.0 0.016" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <pelvis_l_collision_geom_macro />
     <pelvis_l_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH1_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.028652" y_length="0.045" z_length="0.08175" >
       <origin xyz="0.000079 0.018242 0.013873" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh1_l_collision_geom_macro />
     <thigh1_l_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH2_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="-0.062965 -0.000323 0.000692" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh2_l_collision_geom_macro />
     <thigh2_l_visual_geom_macro />
   </link>
 
   <link name="MP_TIBIA_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.0070309794" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="-0.053955 0.006548 -0.000592" />
-      <mass value="0.070309794"/>
-      <inertia ixx="0.093369608"  ixy="-0.00093567395"  ixz="-0.00023992085" iyx="-0.00093567395" iyy="0.046295534" iyz="-0.012858493" izx="-0.00023992085" izy="-0.012858493" izz="0.11351516" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <tibia_l_collision_geom_macro />
     <tibia_l_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE1_L" >
-    <inertial>
-      <origin xyz="-0.000214 -0.018536 0.013873" />
-      <mass value="0.16710792"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.16710792" x_length="0.038652" y_length="0.07175" z_length="0.035" >
+      <origin xyz="0.01 -0.025 0.0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle1_l_collision_geom_macro />
     <ankle1_l_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE2_L" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.0794462" x_length="0.008" y_length="0.066" z_length="0.104" >
       <origin xyz="-0.025995 -0.009506 -0.000503" />
-      <mass value="0.0794462"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle2_l_collision_geom_macro />
     <ankle2_l_visual_geom_macro />
   </link>
 
   <link name="MP_PELVIS_R" >
-    <inertial>
-      <origin xyz="0.000000 0.000480 0.018437" />
-      <mass value="0.197"/>
-      <inertia ixx="0.12259691"  ixy="0.00071127469"  ixz="0.00081143913" iyx="0.00071127469" iyy="0.11066637" iyz="-0.0071635476" izx="0.00081143913" izy="-0.0071635476" izz="0.041877668" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.197" x_length="0.025" y_length="0.045" z_length="0.032" >
+      <origin xyz="0.0 0.0 0.016" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <pelvis_r_collision_geom_macro />
     <pelvis_r_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH1_R" >
-    <inertial>
-      <origin xyz="0.000079 -0.018242 0.0138735" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.028652" y_length="0.045" z_length="0.08175" >
+      <origin xyz="0.000079 -0.018242 0.013873" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh1_r_collision_geom_macro />
     <thigh1_r_visual_geom_macro />
   </link>
 
   <link name="MP_THIGH2_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.11904336" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="0.062965 -0.000323 0.000692" />
-      <mass value="0.11904336"/>
-      <inertia ixx="0.097950272"  ixy="0.0012119368"  ixz="-0.00021223016" iyx="0.00122119368" iyy="0.032848287" iyz="-0.0019474021" izx="-0.00021223016" izy="-0.0019474021" izz="0.11493509" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <thigh2_r_collision_geom_macro />
     <thigh2_r_visual_geom_macro />
   </link>
 
   <link name="MP_TIBIA_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.070309794" x_length="0.093" y_length="0.035" z_length="0.045" >
       <origin xyz="0.053955 0.006548 -0.000592" />
-      <mass value="0.070309794"/>
-      <inertia ixx="0.093369608"  ixy="-0.00093567395"  ixz="-0.00023992085" iyx="-0.00093567395" iyy="0.046295534" iyz="-0.012858493" izx="-0.00023992085" izy="-0.012858493" izz="0.11351516" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <tibia_r_collision_geom_macro />
     <tibia_r_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE1_R" >
-    <inertial>
-      <origin xyz="-0.000214 -0.018536 -0.013873" />
-      <mass value="0.16710792"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.16710792" x_length="0.038652" y_length="0.07175" z_length="0.035" >
+      <origin xyz="-0.01 -0.025 0.0" />
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle1_r_collision_geom_macro />
     <ankle1_r_visual_geom_macro />
   </link>
 
   <link name="MP_ANKLE2_R" >
-    <inertial>
+    <xacro:inertial_cuboid__with_pose_macro mass="0.0794462" x_length="0.008" y_length="0.066" z_length="0.104" >
       <origin xyz="0.025995 -0.009506 -0.000503" />
-      <mass value="0.0794462"/>
-      <inertia ixx="0.12079175"  ixy="-0.00079781067"  ixz="-0.00039322246" iyx="-0.00079781067" iyy="0.10885465" iyz="0.0070770117" izx="-0.00039322246" izy="0.0070770117" izz="0.041871103" />
-    </inertial>
+    </xacro:inertial_cuboid__with_pose_macro>
     <ankle2_r_collision_geom_macro />
     <ankle2_r_visual_geom_macro />
   </link>
   
  
-
+  
 
 
 
@@ -134,7 +111,7 @@
     <child link="MP_PELVIS_L"/>
     <origin xyz="-0.005 0.037 -0.09355" rpy="0 3.14159 -1.5707963" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_thigh1_l" type="revolute">
@@ -142,7 +119,7 @@
     <child link="MP_THIGH1_L"/>
     <origin xyz="0 0 0.028652" rpy="1.5707963 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_thigh2_l" type="revolute">
@@ -150,7 +127,7 @@
     <child link="MP_THIGH2_L"/>
     <origin xyz="0 0 0" rpy="1.5707963 0 -1.5707963" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_tibia_l" type="revolute">
@@ -158,7 +135,7 @@
     <child link="MP_TIBIA_L"/>
     <origin xyz="-0.093 0 0" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_ankle1_l" type="revolute">
@@ -166,7 +143,7 @@
     <child link="MP_ANKLE1_L"/>
     <origin xyz="-0.093 0 0" rpy="3.14159 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_ankle2_l" type="revolute">
@@ -174,7 +151,7 @@
     <child link="MP_ANKLE2_L"/>
     <origin xyz="0 0 0" rpy="-1.5707963 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_pelvis_r" type="revolute">
@@ -182,7 +159,7 @@
     <child link="MP_PELVIS_R"/>
     <origin xyz="-0.005 -0.037 -0.09355" rpy="0 3.14159 1.5707963" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_thigh1_r" type="revolute">
@@ -190,7 +167,7 @@
     <child link="MP_THIGH1_R"/>
     <origin xyz="0 0 0.028652" rpy="-1.5707963 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_thigh2_r" type="revolute">
@@ -198,7 +175,7 @@
     <child link="MP_THIGH2_R"/>
     <origin xyz="0 0 0" rpy="1.5707963 0 -1.5707963" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_tibia_r" type="revolute">
@@ -206,7 +183,7 @@
     <child link="MP_TIBIA_R"/>
     <origin xyz="0.093 0 0" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_ankle1_r" type="revolute">
@@ -214,7 +191,7 @@
     <child link="MP_ANKLE1_R"/>
     <origin xyz="0.093 0 0" rpy="3.14159 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
   <joint name="j_ankle2_r" type="revolute">
@@ -222,7 +199,7 @@
     <child link="MP_ANKLE2_R"/>
     <origin xyz="0 0 0" rpy="-1.5707963 0 0" />
     <axis xyz="0 0 1" />
-    <limit effort="2.8" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
+    <limit effort="6.2" velocity="5.6548668" lower="-2.6179939" upper="2.6179939" />
   </joint>
 
 
@@ -250,9 +227,10 @@
     <mu2>9000</mu2>
     <kp>1000000.0</kp>
     <kd>10.0</kd>
-    <minDepth>0.001</minDepth>
+    <minDepth>0.0001</minDepth>
     <maxContacts>1</maxContacts>    
   </gazebo>
+
 
 
 
@@ -267,9 +245,10 @@
     <mu2>9000</mu2>
     <kp>1000000.0</kp>
     <kd>10.0</kd>
-    <minDepth>0.001</minDepth>
+    <minDepth>0.0001</minDepth>
     <maxContacts>1</maxContacts>    
   </gazebo>
 
   </macro>
 </robot>
+
