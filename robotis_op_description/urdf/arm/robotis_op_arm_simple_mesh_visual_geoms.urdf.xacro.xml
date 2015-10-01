@@ -8,7 +8,7 @@
       <geometry>
         <box size="0.001 0.001 0.001"  scale="1 1 1"/>
       </geometry>
-      <xacro:grey/>
+      <material name="grey"/>
     </visual>
 </macro> 
 
@@ -18,7 +18,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/shoulder_l.STL"  scale="1 1 1"/>
       </geometry>
-      <xacro:grey/>
+      <material name="grey"/>
     </visual>
 </macro> 
 
@@ -28,7 +28,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/arm_high_l.STL"  scale="1 1 1"/>
       </geometry>
-      <xacro:grey/>
+      <material name="grey"/>
     </visual>
 </macro> 
 
@@ -38,7 +38,7 @@
       <geometry>
         <box size="0.032 0.032 0.035" />
       </geometry>
-      <xacro:grey/>
+      <material name="grey"/>
     </visual>
 </macro> 
 
@@ -48,7 +48,7 @@
       <geometry>
         <box size="0.064 0.032 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -58,7 +58,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -68,14 +68,14 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
     <visual name="VIS_MP_ARM_GRIPPER_MOV_EXT_L">
       <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
       <geometry>
         <box size="0.002 0.01 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -85,7 +85,7 @@
       <geometry>
         <box size="0.001 0.001 0.001" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -95,7 +95,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/shoulder_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -105,7 +105,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/arm_high_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -115,7 +115,7 @@
       <geometry>
         <box size="0.032 0.032 0.035" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -125,7 +125,7 @@
       <geometry>
         <box size="0.064 0.032 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -135,7 +135,7 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -145,14 +145,14 @@
       <geometry>
         <box size="0.032 0.005 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
     <visual name="VIS_MP_ARM_GRIPPER_MOV_EXT_R">
       <origin xyz="0.031 -0.0025 0" rpy="0 0 0" />
       <geometry>
         <box size="0.002 0.01 0.032" />
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 

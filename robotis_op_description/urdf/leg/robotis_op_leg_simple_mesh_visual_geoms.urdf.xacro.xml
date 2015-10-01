@@ -8,7 +8,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/pelvis_l.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -18,7 +18,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/thigh1_l.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -28,7 +28,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/thigh2_l.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -38,7 +38,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/tibia_l.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -48,7 +48,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/ankle1_l.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -58,7 +58,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/ankle2_l.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -68,7 +68,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/pelvis_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -78,7 +78,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/thigh1_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -88,7 +88,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/thigh2_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -98,7 +98,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/tibia_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -108,7 +108,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/ankle1_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 
@@ -118,7 +118,7 @@
       <geometry>
         <mesh filename="package://robotis_op_description/meshes/ankle2_r.STL"  scale="1 1 1"/>
       </geometry>
-       <xacro:grey/>
+       <material name="grey"/>
     </visual>
 </macro> 
 

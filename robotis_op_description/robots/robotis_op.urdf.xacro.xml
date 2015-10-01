@@ -8,6 +8,7 @@
 
   <xacro:include filename="$(find robotis_op_description)/urdf/helper_macros.urdf.xacro.xml" />
   
+  <xacro:include filename="$(find robotis_op_description)/urdf/materials.xacro" />
 
   <xacro:include filename="$(find robotis_op_description)/urdf/arm/robotis_op_arm.urdf.xacro" />
   <xacro:include filename="$(find robotis_op_description)/urdf/torso/robotis_op_torso.urdf.xacro" />
